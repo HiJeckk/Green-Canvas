@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #bbf7d0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#home-page .container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 300px;
+}
+
+#home-page footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    color: #555;
+    margin-top: 68px;
+    background-color: #333;
+    border-top: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#home-page h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Gaya untuk menu atas */
+.top-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: background 0.3s;
+}
+
+.top-menu a:hover {
+    background-color: #3e8e41;
+    border-radius: 5px;
+}
+
+
+.main-content {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #30d34e;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+
+body.beranda {
+    background-image: url('daun.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+body.inovasi {
+    background-image: url('Kabut\ Image\ 2024-04-02\ at\ 09.23.59_55e3b62e.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: black;
+    color: #800080;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #800080;
+    margin: 10px;
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #a836b0;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 18px;
+    color: #666;
+    padding: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .top-menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .logo {
+        font-size: 20px;
+        top: 10px;
+        left: 10px;
+    }
+    .top-menu a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .main-content h1 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media screen and (max-witdh: 375px){
+    body {
+        max-width: 375px;
+        padding: 0 10px; 
+        overflow-y: auto; 
+    }
+    
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    .container {
+        width: 100%; 
+        max-width: 375px; 
+    }
+
+    video {
+        min-width: 100vw;
+        min-height: 100vh;
+        object-fit: cover;
+    }
+
+    .logo {
+        font-size: 20px; 
+        top: 15px; 
+        left: 20px; 
+        letter-spacing: 1px; 
+    }
+
+    h1 {
+        font-size: 28px; 
+        margin-bottom: 15px; 
+        text-align: center; 
+    }
+   
+    #home-page .container {
+        text-align: center; 
+        max-width: 100%; 
+        margin: 0 10px; 
+        padding: 10px; 
+        margin-top: 150px; 
+    }
+    
+    p {
+        font-size: 18px; 
+        margin-bottom: 30px; 
+        text-align: center; 
+        max-width: 375px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .top-menu {
+        max-width: 375px; 
+        width: 100%; 
+        top: 10px; 
+        right: 10px; 
+    }
+    
+    top-menu a {
+        max-width: 375px; 
+        width: 100%; 
+        padding: 10px 15px; 
+        text-align: center; 
+    }
+
+    .top-menu a:hover {
+        background-color: #3e8e41; 
+        border-radius: 5px; 
+        
+    }
+
+    .main-content {
+        max-width: 375px; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .main-content h1 {
+        font-size: 2em; 
+        margin-bottom: 8px; 
+    }
+
+    .main-content p {
+        font-size: 1em; 
+        line-height: 1.4; 
+    }
+
+    body.beranda {
+        background-image: url('daun.jpg'); 
+        background-size: cover; 
+        background-position: center;
+        
+    }
+
+    body.inovasi {
+        background-image: url('Kabut Image 2024-04-02 at 09.23.59_55e3b62e.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .container {
+        padding: 10px; 
+        gap: 10px; 
+    }
+
+    .card {
+        width: 100%; 
+        padding: 20px;
+        margin: 5px; 
+    }
+
+    .card:hover {
+        transform: translateY(-5px); 
+    }
+
+    .card img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .card p {
+        font-size: 14px; 
+        color: #666; 
+        padding: 0 5px; 
+    }
+
+}
+
